@@ -1,0 +1,15 @@
+<div ng-if="!feedlistController.list.length" class="alert alert-warning">
+    <span class="icon icon-exclamation-triangle"></span> Es wurde bei der Installation kein RSS Feed hinterlegt.
+</div>
+
+<div ng-if="feedlistController.list.length" class="media item-hover" ng-click="feedlistController.onOpenItem({ $url: item.link })" ng-repeat="item in feedlistController.list">
+    <div class="media-body">
+        <h3>{{ item.title }}</h3>
+        <span class="datetime" ng-if="item.pubDate">{{ item.pubDate.de.date }}, {{ item.pubDate.de.time }} Uhr</span>
+    </div>
+
+    <div class="media-right">
+        <div ng-if="item.image" style="background:url({{ item.image }}) center center no-repeat;" class="imgContainer"></div>
+        <span ng-if="!item.image" class="iconCenter icon-file-text-o"></span>
+    </div>
+</div>

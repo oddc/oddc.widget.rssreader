@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget id="oddc.widget.rssreader" builder="2.3.1">
+    <information>
+        <name lang="de-DE">opta data RSS Reader</name>
+        <version>1.0.0</version>
+        <author>
+            <company>opta data Gruppe</company>
+            <telephone>0201 / 3 19 60</telephone>
+            <fax>0201 89074499</fax>
+            <email>service@optadata-gruppe.de</email>
+            <web>http://www.optadata-gruppe.de</web>
+        </author>
+        <developer>
+            <name>Sven Strgar</name>
+            <email>s.strgar@optadata-gruppe.de</email>
+        </developer>
+        <summary lang="de-DE">
+            <image>/res/img/small.jpg</image>
+            <text type="textile">
+                Über das RSS-Feed können Sie aktuelle Inhalte von jeder beliebigen Website anzeigen lassen.
+            </text>
+        </summary>
+        <description lang="de-DE">
+            <image>/res/img/big.jpg</image>
+            <text type="textile">
+                Hier können Sie News-Inhalte von beliebiger Website einladen, z. B. private Themen oder Fachthemen. Als Administrator können Sie Inhalte vorgeben oder für jeden einzelnen User individuell einstellen.
+            </text>
+        </description>
+        <tags>kostenlos, opta data, news, rss</tags>
+        <appearance>
+            <text-appearance>light</text-appearance>
+            <main-color>#005694</main-color>
+        </appearance>
+    </information>
+    <ressources>
+        <templates lang="de-DE">
+            <template cols="1" rows="1" markup="/src/app.html">
+                <styles>
+                    <style>/src/app.css</style>
+                </styles>
+                <scripts>
+                    <script>/src/app.js</script>
+                    <script>/src/components/index-page.component.js</script>
+                    <script>/src/components/config-page.component.js</script>
+                    <script>/src/components/feedlist/feedlist.component.js</script>
+                    <script>/src/services/feedreader.service.js</script>
+                </scripts>
+            </template>
+        </templates>
+        <services>
+            <service environment="DEV" type="restful" name="requestFeeds" url="http://odcweb1.optadata.com/services/services/newsfeed/feed/request" method="PUT"></service>
+            <service environment="DEV" type="restful" name="loadCustomRssFeed" url="http://crm-test.optadata.com:8080/odone.business/propertys/oddc.widget.rssreader/feed" method="GET"></service>
+            <service environment="DEV" type="restful" name="saveCustomFeedUrl" url="http://crm-test.optadata.com:8080/odone.business/propertys" method="PUT"></service>
+            <service environment="DEV" type="restful" name="getCurrentUser" url="http://crm-test.optadata.com:8080/odone.business/users/current" method="GET"></service>
+
+            <service environment="PROD" type="restful" name="requestFeeds" url="https://oddcserv.optadata-one.de/services/newsfeed/feed/request" method="PUT"></service>
+            <service environment="PROD" type="restful" name="loadCustomRssFeed" url="https://biz.optadata-one.de/propertys/oddc.widget.rssreader/feed" method="GET"></service>
+            <service environment="PROD" type="restful" name="saveCustomFeedUrl" url="https://biz.optadata-one.de/propertys" method="PUT"></service>
+            <service environment="PROD" type="restful" name="getCurrentUser" url="https://biz.optadata-one.de/users/current" method="GET"></service>
+        </services>
+    </ressources>
+</widget>
+

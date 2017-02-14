@@ -1,0 +1,12 @@
+<od-widget widget-title="RSS Reader" icon="res/img/icon.svg">
+    <od-widget-content nospacing>
+        <od-scrollbar>
+            <div ng-if="indexPageController.loading">
+                <od-loader></od-loader>
+            </div>
+            <feedlist ng-if="!indexPageController.loading"
+                      list="indexPageController.Feedreader.getFeeds()"
+                      on-open-item="indexPageController.onOpenItem($url)"></feedlist>
+        </od-scrollbar>
+    </od-widget-content>
+</od-widget>

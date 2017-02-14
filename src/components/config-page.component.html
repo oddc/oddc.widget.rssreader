@@ -1,0 +1,11 @@
+<od-widget widget-title="RSS Reader Einstellungen" icon="res/img/icon.svg">
+    <od-widget-content>
+        <form class="feedForm" ng-submit="configPageController.submitRssFeed(configPageController.feedUrl)">
+            <div class="form-group">
+                <label for="feedUrl">Geben Sie hier einen gültigen RSS Feed ein</label>
+                <input type="text" class="form-control" id="feedUrl" placeholder="z.B. https://www.optadata-gruppe.de/presse/alle.rss" ng-model="configPageController.feedUrl" />
+            </div>
+            <button type="submit" class="btn btn-success">Speichern</button>
+        </form>
+    </od-widget-content>
+</od-widget>

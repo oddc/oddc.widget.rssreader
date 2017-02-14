@@ -1,0 +1,124 @@
+.media {
+    padding: 0 0 0 5px !important;
+    overflow: hidden;
+}
+
+.media-right {
+    height: 132px;
+    min-width: 160px;
+    background: #f7f7f7;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgContainer {
+    width: 100%;
+    height: 132px;
+    background-size: cover !important;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+}
+
+.item-hover:hover .imgContainer {
+    transform: scale(1.2);
+}
+
+.media-body {
+    padding: 10px;
+    overflow: hidden;
+    color: #7C7C7C;
+}
+
+.media-body p {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.media-right, .media>.pull-right {
+    padding-left: 0;
+}
+
+.iconCenter {
+    font-size: 36px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #bbb;
+    margin-top: -20px;
+    margin-left: -17px;
+}
+
+h3 {
+    color: #7C7C7C !important;
+    margin: 0 !important;
+
+}
+
+.media .datetime {
+    font-size: 10px;
+}
+
+.media .feedcontent {
+    margin-top: 10px;
+}
+
+.config-icon {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 14px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+ui-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+ui-view.ng-enter,
+ui-view.ng-leave {
+    position: absolute;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+#widget.index ui-view.ng-enter {
+    animation: slideInLeft .5s both;
+}
+
+#widget.index ui-view.ng-leave {
+    animation: slideOutRight .5s both;
+}
+
+#widget.config ui-view.ng-enter {
+    animation: slideInRight .5s both;
+}
+
+#widget.config ui-view.ng-leave {
+    animation: slideOutLeft .5s both;
+}
+
+.feedForm .form-group label {
+    color: #6F7480;
+}
+
+.feedForm .form-group input.form-control {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px solid #e6e8ef;
+}
+
+#widget.index ~ .config-icon {
+    display: block;
+}
+
+#widget.config ~ .config-icon {
+    display: none;
+}

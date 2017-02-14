@@ -1,0 +1,21 @@
+{
+    "scheme": {
+        "type": "object",
+        "properties": {
+            "feedUrl": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "feedUrl"
+        ]
+    },
+    "form": [
+        {
+            "key": "feedUrl",
+            "placeholder": "z.B. https://www.optadata-gruppe.de/presse/alle.rss",
+            "title": "RSS Feed",
+            "description": "Geben Sie einen RSS Feed an."
+        }
+    ]
+}
