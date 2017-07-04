@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget id="oddc.widget.rssreader" builder="2.3.2">
+<!DOCTYPE widget PUBLIC "-//ODONE//DTD WIDGET-MANIFEST 3.0.0//DE" "https://www.optadata-one.de/widgetbuilder/3.0.0/widget.dtd">
+<widget id="oddc.widget.rssreader" builder="3.0.0">
     <information>
         <name lang="de-DE">opta data RSS Reader</name>
-        <version>1.0.1</version>
+        <version>1.0.5</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
@@ -57,6 +58,12 @@
             <service environment="PROD" type="restful" name="loadCustomRssFeed" url="https://biz.optadata-one.de/propertys/oddc.widget.rssreader/feed" method="GET"></service>
             <service environment="PROD" type="restful" name="saveCustomFeedUrl" url="https://biz.optadata-one.de/propertys" method="PUT"></service>
             <service environment="PROD" type="restful" name="getCurrentUser" url="https://biz.optadata-one.de/users/current" method="GET"></service>
+
+            <service environment="TEST" type="restful" name="requestFeeds" url="https://oddcserv.test.optadata-one.de/services/newsfeed/feed/request" method="PUT"></service>
+            <service environment="TEST" type="restful" name="loadCustomRssFeed" url="https://biz.test.optadata-one.de/propertys/oddc.widget.rssreader/feed" method="GET"></service>
+            <service environment="TEST" type="restful" name="saveCustomFeedUrl" url="https://biz.test.optadata-one.de/propertys" method="PUT"></service>
+            <service environment="TEST" type="restful" name="getCurrentUser" url="https://biz.test.optadata-one.de/users/current" method="GET"></service>
+
         </services>
     </ressources>
 </widget>
