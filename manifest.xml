@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE widget PUBLIC "-//ODONE//DTD WIDGET-MANIFEST 3.0.0//DE" "https://www.optadata-one.de/widgetbuilder/3.0.0/widget.dtd">
-<widget id="oddc.widget.rssreader" builder="3.0.0">
+<widget id="oddc.widget.rssreader" builder="3.0.0" icon="/res/img/icon.png">
     <information>
         <name lang="de-DE">opta data RSS Reader</name>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
@@ -22,7 +22,10 @@
             </text>
         </summary>
         <description lang="de-DE">
-            <image>/res/img/big.jpg</image>
+            <media>
+                <image>/res/img/small.jpg</image>
+                <image>/res/img/big.jpg</image>
+            </media>
             <text type="textile">
                 Hier können Sie News-Inhalte von beliebiger Website einladen, z. B. private Themen oder Fachthemen. Als Administrator können Sie Inhalte vorgeben oder für jeden einzelnen User individuell einstellen.
             </text>
@@ -32,6 +35,7 @@
             <text-appearance>light</text-appearance>
             <main-color>#005694</main-color>
         </appearance>
+        <productgroup>odone.interne.widgets</productgroup>
     </information>
     <ressources>
         <templates lang="de-DE">
