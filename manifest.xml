@@ -3,7 +3,8 @@
 <widget id="oddc.widget.rssreader" builder="3.0.0" icon="/res/img/icon.png">
     <information>
         <name lang="de-DE">opta data RSS Reader</name>
-        <version>1.0.6</version>
+		<shortname lang="de-DE">OD RSS</shortname>
+        <version>1.0.7</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
