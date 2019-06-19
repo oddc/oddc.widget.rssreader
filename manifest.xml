@@ -4,7 +4,7 @@
     <information>
         <name lang="de-DE">opta data RSS Reader</name>
 		<shortname lang="de-DE">OD RSS</shortname>
-        <version>1.0.7</version>
+        <version>1.0.8</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
@@ -55,9 +55,9 @@
         </templates>
         <services>
             <service environment="DEV" type="restful" name="requestFeeds" url="http://odcweb1.optadata.com/services/services/newsfeed/feed/request" method="PUT"></service>
-            <service environment="DEV" type="restful" name="loadCustomRssFeed" url="http://crm-test.optadata.com:8080/odone.business/propertys/oddc.widget.rssreader/feed" method="GET"></service>
-            <service environment="DEV" type="restful" name="saveCustomFeedUrl" url="http://crm-test.optadata.com:8080/odone.business/propertys" method="PUT"></service>
-            <service environment="DEV" type="restful" name="getCurrentUser" url="http://crm-test.optadata.com:8080/odone.business/users/current" method="GET"></service>
+            <service environment="DEV" type="restful" name="loadCustomRssFeed" url="http://wildfly.optadata.com:8080/odone.business/propertys/oddc.widget.rssreader/feed" method="GET"></service>
+            <service environment="DEV" type="restful" name="saveCustomFeedUrl" url="http://wildfly.optadata.com:8080/odone.business/propertys" method="PUT"></service>
+            <service environment="DEV" type="restful" name="getCurrentUser" url="http://wildfly.optadata.com:8080/odone.business/users/current" method="GET"></service>
 
             <service environment="PROD" type="restful" name="requestFeeds" url="https://oddcserv.optadata-one.de/services/newsfeed/feed/request" method="PUT"></service>
             <service environment="PROD" type="restful" name="loadCustomRssFeed" url="https://biz.optadata-one.de/propertys/oddc.widget.rssreader/feed" method="GET"></service>
