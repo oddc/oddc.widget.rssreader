@@ -4,7 +4,7 @@
     <information>
         <name lang="de-DE">opta data RSS Reader</name>
 		<shortname lang="de-DE">OD RSS</shortname>
-        <version>1.0.8</version>
+        <version>1.0.9</version>
         <author>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
@@ -37,6 +37,17 @@
             <main-color>#005694</main-color>
         </appearance>
         <productgroup>odone.interne.widgets</productgroup>
+        <tutorial>
+            <helptext lang="de-DE">
+                Der RSS-Reader kann dazu verwendet werden, News Streams von Drittseiten in opta data one anzuzeigen.
+                Suchen Sie dazu eine Webseite, z.B. die einer Zeitung oder eines Nachrichtenportals.
+                Einige dieser Seiten bieten Ihre News auch als Newsfeed im RSS-Format an. Kopieren Sie die URL des RSS-Feeds.
+                Im RSS-Reader-Widget können Sie über den Klick auf das Zahnrad einen Newsfeed hinterlegen.
+                In einigen opta data one Netzwerken ist das Newsfeed-Widget durch den Administrator durch ein festen Feed belegt,
+                in diesem Fall können Sie den Newsfeed nicht ändern.
+            </helptext>
+            <image>/res/img/small.png</image>
+        </tutorial>
     </information>
     <ressources>
         <templates lang="de-DE">
