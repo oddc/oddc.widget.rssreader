@@ -4,12 +4,13 @@
     <information>
         <name lang="de-DE">opta data RSS Reader</name>
 		<shortname lang="de-DE">OD RSS</shortname>
-        <version>1.0.9</version>
+        <version>1.0.10</version>
         <author>
+            <name>opta data digital communication GmbH</name>
             <company>opta data Gruppe</company>
             <telephone>0201 / 3 19 60</telephone>
             <fax>0201 89074499</fax>
-            <email>service@optadata-gruppe.de</email>
+            <email>od1-support@optadata.de</email>
             <web>http://www.optadata-gruppe.de</web>
         </author>
         <developer>
@@ -43,7 +44,7 @@
                 Suchen Sie dazu eine Webseite, z.B. die einer Zeitung oder eines Nachrichtenportals.
                 Einige dieser Seiten bieten Ihre News auch als Newsfeed im RSS-Format an. Kopieren Sie die URL des RSS-Feeds.
                 Im RSS-Reader-Widget können Sie über den Klick auf das Zahnrad einen Newsfeed hinterlegen.
-                In einigen opta data one Netzwerken ist das Newsfeed-Widget durch den Administrator durch ein festen Feed belegt,
+                In einigen opta data one Netzwerken ist das Newsfeed-Widget durch den Administrator durch ein festen Feed belegt,git
                 in diesem Fall können Sie den Newsfeed nicht ändern.
             </helptext>
             <image>/res/img/small.png</image>
